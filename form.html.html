@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        <form>
+        action : <form> 태그 안의 내용을 전송할 서버의 주소
+        method : <form> 태그에 입력한 내용을 서버로 전달하는 방식을 지정
+            - get : 주소 표시줄에 사용자가 입력한 내용이 그대로 노출된다.
+                    입력 내용 길이에 제한이 있다. (최대 4096 byte 까지만 전송가능 - form의 기본방식)
+            - post : 입력 내용의 길이에 제한이 없고, 입력한 내용이 주소 표시줄에 노출되지 않는다.
+
+     -->
+    <form action = "join" method = "get">
+        
+        <label for="id">아이디</label>
+        <input type = "text" id = "id" name = "id"><br>
+        
+        <label for="name">이름</label>
+        <input type = "text" id = "name" name = "name"><br>
+        
+        <label>패스워드
+            <input type = "password" id = "password" name = "password">
+        </label><br>
+        
+        <label for = "birth">생년월일</label>
+        <input type = "date" id = "birth" name = "birth"><br>
+        
+        <label for = "email">이메일</label>
+        <input type = "email" id = "email" name = "email"><br>
+        
+        <label for = "quantity">수량</label>
+        <input type = "number" id = "quantity" name = "quantity"><br>
+        
+        <label for = "vol">볼륨</label>
+        <input type = "range" id = "vol" name = "vol" min = "0" max = "10"><br>
+        
+        <label for = "search">검색</label>
+        <input type = "search" id = "search" name = "search"><br>
+        
+        <label for = "phone">전화번호</label>
+        <input type = "tel" id = "phone" name = "phone"><br>
+        
+        <label for = "homepage">홈페이지</label>
+        <input type = "url" id = "homepage" name = "homepage"><br>
+        
+        <label for = "city">도시</label>
+        <select name = "city" id = "city">
+            <option value = "Seoul">서울</option>
+            <option value = "Busan">부산</option>
+            <option value = "Daegu">대구</option>
+        </select><br>
+
+        <label for = "message">메세지</label>
+        <textarea id = "message" name = "message" cols = "30" rows = "10">
+안녕하세요 제 이름은 홍길동 입니다.
+Hello HTML
+        </textarea><br>
+        
+        <input type = "button" value = "클릭 하세요" onclick = "alert('Hello World')"><br>
+
+        <label for ="file">파일 업로드</label>
+        <input type = "file" name = "file" id = "file"><br>
+
+        <input type = "radio" name = "gender" id = "male" value = "male">
+        <label for = "male">남자</label>
+        <input type = "radio" name = "gender" id = "female" value = "female">
+        <label for = "female">여자</label><br>
+
+        <input type = "checkbox" name = "hobby" id = "soccer" value = "soccer">
+        <label for = "soccer">축구</label>
+        <input type = "checkbox" name = "hobby" id = "baseball" value = "baseball">
+        <label for = "baseball">야구</label>
+        <input type = "checkbox" name = "hobby" id = "swimming" value = "swimming">
+        <label for = "swimming">수영</label><br>
+
+        <input type = "submit" value = "전송하기"><br>
+        <input type = "reset" value = "취소하기">
+    </form>
+</body>
+</html>
